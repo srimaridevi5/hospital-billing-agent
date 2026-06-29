@@ -1,0 +1,44 @@
+[
+  {
+    "service_code": "CONS001",
+    "service_name": "General Consultation",
+    "category": "Consultation",
+    "unit_price": 500.00
+  },
+  {
+    "service_code": "LAB001",
+    "service_name": "Complete Blood Count",
+    "category": "Laboratory",
+    "unit_price": 350.00
+  },
+  {
+    "service_code": "LAB002",
+    "service_name": "Blood Sugar Test",
+    "category": "Laboratory",
+    "unit_price": 200.00
+  },
+  {
+    "service_code": "RAD001",
+    "service_name": "Chest X-Ray",
+    "category": "Radiology",
+    "unit_price": 800.00
+  },
+  {
+    "service_code": "RAD002",
+    "service_name": "MRI Scan",
+    "category": "Radiology",
+    "unit_price": 5500.00
+  },
+  {
+    "service_code": "MED001",
+    "service_name": "Paracetamol",
+    "category": "Medicine",
+    "unit_price": 15.00
+  },
+  {
+    "service_code": "PROC001",
+    "service_name": "ECG",
+    "category": "Procedure",
+    "unit_price": 700.00
+  }
+]
