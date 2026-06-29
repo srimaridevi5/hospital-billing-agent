@@ -1,11 +1,26 @@
-from langchain_ollama import ChatOllama
+import os
 
-llm = ChatOllama(
-    model="llama3.2",
-    base_url="http://127.0.0.1:11434",
-    temperature=0,
+from groq import Groq
+from dotenv import load_dotenv
+
+load_dotenv()
+
+client = Groq(
+    api_key=os.getenv("GROQ_API_KEY")
 )
 
+
 def ask_llm(prompt: str):
-    response = llm.invoke(prompt)
-    return response.content
+
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[
+            {
+                "role": "user",
+                "content": prompt,
+            }
+        ],
+        temperature=0,
+    )
+
+    return response.choices[0].message.content
